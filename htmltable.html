@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Time Table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Trebuchet MS;
+        margin: 50px;
+        border: 10px solid black;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .myTimetable {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      .myTimetable thead,tbody {
+        background-color: #aaaaff;
+       
+      }
+
+      .myTimetable td {
+        border: 1px solid black;
+        padding: 6px;
+        text-align: center;
+      }
+
+      .subject {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+      .week {
+        font-size: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="myTimetable">
+      <thead>
+        <h1>Time Table</h1>
+      </thead>
+      <tbody>
+        <tr><td rowspan="8" class="week">Hours</td></tr>
+        <tr>
+          <td class="week">Mon</td>
+          <td class="week">Tues</td>
+          <td class="week">Wed</td>
+          <td class="week">Thus</td>
+          <td class="week">Fri</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="subject">Science</div>
+          </td>
+          <td>
+            <div class="subject">Maths</div>
+          </td>
+          <td>
+            <div class="subject">Science</div>
+          </td>
+          <td>
+            <div class="subject">Maths</div>
+          </td>
+          <td>
+            <div class="subject">Arts</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="subject">Social</div>
+          </td>
+          <td>
+            <div class="subject">History</div>
+          </td>
+          <td>
+            <div class="subject">English</div>
+          </td>
+          <td>
+            <div class="subject">Social</div>
+          </td>
+          <td>
+            <div class="subject">Sports</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="5" class="week">Lunch</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="subject">Science</div>
+          </td>
+          <td>
+            <div class="subject">Maths</div>
+          </td>
+          <td>
+            <div class="subject">Science</div>
+          </td>
+          <td>
+            <div class="subject">Maths</div>
+          </td>
+          <td rowspan="2">Project</td>
+          
+        </tr>
+        <tr>
+          <td>
+            <div class="subject">Social</div>
+          </td>
+          <td>
+            <div class="subject">History</div>
+          </td>
+          <td>
+            <div class="subject">English</div>
+          </td>
+          <td>
+            <div class="subject">Social</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
