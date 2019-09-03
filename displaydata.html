@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>display data</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        body {
+            margin:90px;
+        }
+      table tr:not(:first-child) {
+        cursor: pointer;
+         }
+      table tr:not(:first-child):hover {
+        background-color: #ddd;
+      }
+      .myTable td {
+        border: 1px solid black;
+        padding: 6px;
+        text-align: center;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <table id="table" class="myTable" border="5">
+      <tr><h1>Click on any element in the table</h1></tr>
+      <tr>
+        <td>Raj</td>
+        <td>Project Manager</td>
+      </tr>
+
+      <tr>
+        <td>Arun</td>
+        <td>Project Lead</td>
+      </tr>
+
+      <tr>
+        <td>Akaash</td>
+        <td>Team Leader</td>
+      </tr>
+
+      <tr>
+        <td>Athiban</td>
+        <td>Module Leader</td>
+      </tr>
+
+      <tr>
+        <td>Gowtham</td>
+        <td>Senior Engineer</td>
+      </tr>
+      <tr>
+        <td>Babu</td>
+        <td>Project Trainee</td>
+      </tr>
+      <tr>
+        <td>Hariharan</td>
+        <td>Quality Analyst</td>
+      </tr>
+      <tr>
+        <td>Jeyakumar</td>
+        <td>Architect</td>
+      </tr>
+    </table>
+
+    <script>
+      var table = document.getElementById("table");
+
+      for (var i = 1; i < table.rows.length; i++) {
+        table.rows[i].onclick = function() {
+          //rIndex = this.rowIndex;
+          document.getElementById("name").value = this.cells[0].innerHTML;
+          document.getElementById("work").value = this.cells[1].innerHTML;
+        };
+      }
+    </script>
+
+    <br/>
+    <input type="text" id="name" />  <input type="text" id="work" /> 
+  </body>
+</html>
